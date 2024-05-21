@@ -1,0 +1,6 @@
+{
+  "protocol": "https",
+  "domain": "the-internet.herokuapp.com",
+  "wait": 2,
+  "host": "https://the-internet.herokuapp.com"
+}
