@@ -13,9 +13,6 @@ class MainPage(BaseForm):
         name = "Main Page"
         super().__init__(locator, name)
 
-    def is_displayed(self):
-        return self.driver.find_element(By.TAG_NAME, 'body').is_displayed()
-
     @staticmethod
     def get_navigation_link_by_enum(navigation: MainPageNavigation):
         return PyQualityServices.element_factory.get_link(By.XPATH,

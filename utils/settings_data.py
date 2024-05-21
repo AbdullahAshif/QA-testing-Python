@@ -3,7 +3,7 @@ import logging
 
 
 class SettingsData:
-    RESOURCE_FILE_PATH = "/resources/"
+    RESOURCE_FILE_PATH = "../resources/"
     ENV_FILE_PATH = RESOURCE_FILE_PATH + "env.json"
     PROD_FILE_PATH = RESOURCE_FILE_PATH + "prod.json"
     USER_FILE_PATH = RESOURCE_FILE_PATH + "userData.json"
