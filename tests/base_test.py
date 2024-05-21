@@ -8,10 +8,9 @@ from utils.settings_data import SettingsData
 
 @pytest.fixture(scope="session", autouse=True)
 def prepare_browser_factory(request):
-    PyQualityServices.browser_factory = BrowserFactory()
     browser = PyQualityServices.get_browser()
     browser.maximize()
-    browser.go_to(SettingsData.get_env_data().get_host())
+    browser.go_to(SettingsData.get_env_data()['host'])
     yield browser
     browser.quit()
 

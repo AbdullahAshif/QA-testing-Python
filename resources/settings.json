@@ -8,7 +8,6 @@
     "chrome": {
       "webDriverVersion": "latest",
       "capabilities": {
-        "enableVNC": true
       },
       "options": {
         "intl.accept_languages": "en",
@@ -63,7 +62,7 @@
     "timeoutCommand":120
   },
   "retry": {
-    "number": 2,
+    "number": 1,
     "pollingInterval": 11
   },
   "logger": {
