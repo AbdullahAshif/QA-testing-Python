@@ -4,6 +4,7 @@ from browser.py_quality_services import PyQualityServices
 from forms.base_form import BaseForm
 
 
+# I'm trying to learn how to structure my code for Python
 class DataTablesPage(BaseForm):
     __page_name = "Data Tables"
     _element = PyQualityServices.element_factory
