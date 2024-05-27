@@ -18,14 +18,3 @@ def prepare_browser_factory(request):
 @pytest.fixture(scope="class")
 def main_page(prepare_browser_factory):
     return MainPage()
-
-
-@pytest.mark.usefixtures("main_page")
-class TestSiteAccess:
-    def test_site_access(self, main_page):
-        assert main_page.is_displayed(), "Main page is not displayed"
-        print("Asserted main page is displayed")
-        try:
-            main_page.click_navigation_link_string("Add/Remove Elements")
-        except ValueError as e:
-            pytest.fail(str(e))

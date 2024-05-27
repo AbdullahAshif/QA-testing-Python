@@ -22,7 +22,6 @@ class TestBasicAuth:
         self.username = settings.get_user_data()['username']
         self.password = settings.get_user_data()['password']
 
-
     def test_basic_auth(self, main_page, basic_auth_page):
         main_page.click_navigation_link_string("Basic Auth")
 
