@@ -32,3 +32,13 @@ class SettingsData:
         except FileNotFoundError:
             logging.error(SettingsData.ERROR_FILE_READ_MSG + " at: " + SettingsData.PROD_FILE_PATH)
             raise
+
+    @staticmethod
+    def get_user_data():
+        try:
+            with open(SettingsData.USER_FILE_PATH, 'r') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            logging.error(SettingsData.ERROR_MSG)
+            raise RuntimeError(SettingsData.ERROR_MSG)
+

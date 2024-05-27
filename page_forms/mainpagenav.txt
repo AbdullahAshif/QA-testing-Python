@@ -1,0 +1,8 @@
+    @staticmethod
+    def get_navigation_link_by_enum(navigation: MainPageNavigation):
+        return PyQualityServices.element_factory.get_link(By.XPATH,
+                                                          LocatorConstants.PRECISE_TEXT_XPATH.format(navigation.label),
+                                                          navigation.label)
+
+    def click_navigation_link_enum(self, navigation: MainPageNavigation):
+        self.get_navigation_link_by_enum(navigation).click()
