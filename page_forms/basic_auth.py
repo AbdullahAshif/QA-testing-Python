@@ -4,7 +4,7 @@ from browser.py_quality_services import PyQualityServices
 from forms.base_form import BaseForm
 
 
-class BasicAuth(BaseForm):
+class BasicAuthPage(BaseForm):
     __page_name = "JavaScript Alerts"
     _element = PyQualityServices.element_factory
     __success_msg = _element.get_label((By.XPATH,
@@ -13,7 +13,7 @@ class BasicAuth(BaseForm):
                                        "Success message text")
 
     def __init__(self):
-        super(BasicAuth, self).__init__((By.XPATH, LocatorConstants.PRECISE_TEXT_XPATH.format(self.__page_name)),
+        super(BasicAuthPage, self).__init__((By.XPATH, LocatorConstants.PRECISE_TEXT_XPATH.format(self.__page_name)),
                                         self.__page_name)
 
     def is_success_msg_displayed(self):

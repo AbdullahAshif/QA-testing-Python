@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from browser.py_quality_services import PyQualityServices
 from forms.base_form import BaseForm
 
+
 class DataTablesPage(BaseForm):
     __page_name = "Data Tables"
     _element = PyQualityServices.element_factory

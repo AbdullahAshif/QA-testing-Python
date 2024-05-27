@@ -42,3 +42,11 @@ class SettingsData:
             logging.error(SettingsData.ERROR_MSG)
             raise RuntimeError(SettingsData.ERROR_MSG)
 
+    @staticmethod
+    def get_data_table_data():
+        try:
+            with open(SettingsData.DATA_TABLE_FILE_PATH, 'r') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            logging.error(SettingsData.ERROR_MSG)
+            raise RuntimeError(SettingsData.ERROR_MSG)
