@@ -1,0 +1,6 @@
+{
+  "protocol": "https",
+  "domain": "www.wikipedia.org",
+  "wait": 2,
+  "host": "https://www.wikipedia.org"
+}
