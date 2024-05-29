@@ -7,7 +7,7 @@ from framework.forms.download_pdf_form import DownloadPdfForm
 from framework.utils.file_util import FileUtil
 from framework.utils.settings_data import SettingsData
 from framework.tests.base_test import prepare_browser_factory
-# from framework.utils.file_util import FileUtil
+from framework.utils.file_util import FileUtil
 
 
 class TestInput:
